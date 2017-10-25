@@ -1,5 +1,5 @@
 #!/usr/bin/env groovy
 
-node {
+node ("jnlp") {
   docker.run('hello-world')
 }
