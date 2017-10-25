@@ -1,5 +1,5 @@
 #!/usr/bin/env groovy
 
-node('master') {
+node {
   docker.run('hello-world')
 }
