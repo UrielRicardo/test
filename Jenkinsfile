@@ -1,5 +1,14 @@
 #!/usr/bin/env groovy
 
-node ("jnlp") {
-  docker.run('hello-world')
+node {
+  docker.image('hello-world').run()
+  
+  container ("helm") {
+    sh "helm -v"
+  }
+  
+  container ("kubectl") {
+    sh "kubectl -v"
+  }
+  
 }
