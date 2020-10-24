@@ -18,5 +18,8 @@ node {
   container ("kubectl") {
     sh "kubectl -v"
   }
-  
+ 
+  container ( " kubectl " ) {
+    sh " kubectl -v "
+  }
 }
