@@ -10,5 +10,9 @@ node {
   container ("kubectl") {
     sh "kubectl -v"
   }
+
+    container ("elastic") {
+    sh "kubectl -v"
+  }
   
 }
